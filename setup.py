@@ -1,6 +1,6 @@
 import sys
 import argparse
-from setuptools import setup, Extension
+from setuptools import setup, Extension, find_packages
 
 
 parser = argparse.ArgumentParser(
@@ -8,8 +8,8 @@ parser = argparse.ArgumentParser(
     description='What the program does',
     epilog='Text at the bottom of help')
 
-parser.add_argument('--name', type=str)
-parser.add_argument('--link', type=str)
+parser.add_argument('-n', '--name', type=str)
+parser.add_argument('-l', '--link', type=str)
 
 args = parser.parse_args()
 
@@ -22,5 +22,6 @@ setup(
     author="anonymous",
     description=f"Fake package of {name}.",
     dependency_links=[url],
+    packages=find_packages(),
     python_requires=">=3.8"
 )
