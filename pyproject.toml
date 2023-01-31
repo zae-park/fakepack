@@ -1,0 +1,20 @@
+[build-system]
+requires = ['numpy']
+build-backend = "poetry"
+
+[tool.black]
+line-length = 88
+target-version = ['py37', 'py38', 'py39']
+
+[tool.pytest.ini_option]
+
+
+[project]
+name = 'dummy'
+version = '2023-01-31'
+description = 'dummy package'
+readme = 'README.md'
+requires-python = '>=3.8'
+keyword = {'dummy', 'fake', 'empty'}
+author = [{email = 'tom941105@gmail.com'}, {name = 'Zae Park'}]
+
