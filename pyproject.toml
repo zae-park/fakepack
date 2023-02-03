@@ -10,8 +10,11 @@ python = "^3.8"
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 
+[tool.poetry.scripts]
+fake = "fakepack.fakepack:fake"
+
 [build-system]
-requires = ["poetry>=0.12", 'numpy']
+requires = ["poetry>=0.12", "click"]
 build-backend = "poetry.masonry.api"
 
 [tool.black]
