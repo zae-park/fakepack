@@ -1,17 +1,10 @@
 # FakePack
 
-`Release private repository to PyPI.`
+`release test. Build and upload copy of my private repository to PyPI using Poetry.`
 
 
-## How it work?
-Set private repository url to dependency url instead of enroll the wheel file to PyPI.
-
-
-## How to do?
+## Cli command w/ click?
 ```shell
 fake init {USER_TOKEN}
 fake add {NAME} {URL}
 ```
-
-
-Ref - https://dailyheumsi.tistory.com/252
